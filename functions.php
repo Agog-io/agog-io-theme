@@ -53,6 +53,10 @@ Timber::$dirname = array( 'templates', 'views' );
 Timber::$autoescape = false;
 
 
+spl_autoload_register(function ($class_name) {
+    include 'classes/'.$class_name . '.php';
+});
+
 /**
  * We're going to configure our theme inside of a subclass of Timber\Site
  * You can move this to its own file and include here via php's include("MySite.php")
