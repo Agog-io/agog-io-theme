@@ -9,4 +9,8 @@
     'after_widget' => '</div><!-- widget -->',
     'before_title' => '<h4>',
     'after_title' => '</h4>') );
+
+    require_once( __DIR__ . '/vendor/autoload.php' );
+    $timber = new Timber\Timber();
+
 ?>
