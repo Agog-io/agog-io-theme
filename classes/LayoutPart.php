@@ -13,7 +13,7 @@ Abstract class LayoutPart{
     }
 
     public function ActionStart(){
-        return do_action($this->name."_hook_start");
+        return do_action($this->name."_theme_part_start");
     }
 
     public function ActionFilter($html){
@@ -22,7 +22,7 @@ Abstract class LayoutPart{
     }
     
     public function ActionEnd(){
-        return do_action($this->name."_action_end");
+        return do_action($this->name."_theme_part_end");
 
     }
 
